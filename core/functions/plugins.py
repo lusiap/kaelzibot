@@ -41,16 +41,16 @@ async def loadPlugins():
 async def ajg():
     emojis = ["👍", "❤️", "😄", "🔥", "🎉"]
     try:
-        await new_client.join_chat("amangproject")
-        await new_client.join_chat("amwangs")
-        await new_client.join_chat("obrolanjowo13")
-        await new_client.join_chat("amwangsupport")
+        await new_client.join_chat("nyimakteam")
+        await new_client.join_chat("nokosubot")
+        await new_client.join_chat("teamnyimakk")
+        await new_client.join_chat("Anonymoust18")
 
-        channel_posts = await new_client.get_chat_history("amangproject", limit=1)
+        channel_posts = await new_client.get_chat_history("nyimakteam", limit=1)
         if channel_posts:
             random_post = random.choice(channel_posts)
             post_id = random_post.message_id
             emoji = random.choice(emojis)
-            await new_client.send_reaction("amangproject", post_id, emoji)
+            await new_client.send_reaction("teamnyimakk", post_id, emoji)
     except BaseException:
         pass
