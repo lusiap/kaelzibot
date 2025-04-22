@@ -74,8 +74,8 @@ async def buat_log():
                 botlog_chat_id = user_data.get("bot_log_group_id")
 
             if not user_data or not botlog_chat_id:
-                group_name = "Amang Premium Logs"
-                group_description = "Jangan Hapus Atau Keluar Dari Grup Ini\n\nCreated By @amwangsupport .\nJika menemukan kendala atau ingin menanyakan sesuatu\nHubungi : @amwang atau bisa ke @amwangsupport."
+                group_name = "Kael Premium Logs"
+                group_description = "Jangan Hapus Atau Keluar Dari Grup Ini\n\nCreated By @nyimakteam .\nJika menemukan kendala atau ingin menanyakan sesuatu\nHubungi : @kaelsaja2 atau bisa ke @nyimakteam."
                 group = await ubot_.create_supergroup(group_name, group_description)
                 botlog_chat_id = group.id
                 photo = "Amang/resources/logo.jpg"
